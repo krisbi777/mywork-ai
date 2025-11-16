@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyWork‑AI — Pośrednictwo IT & Agencja Pracy</title>
+  <meta name="description" content="Łączymy specjalistów IT z firmami. Rekrutacja, outsourcing, strony WWW, automatyzacje. Napisz do nas i znajdź idealne dopasowanie." />
+  <link rel="canonical" href="https://mywork-ai.com/" />
+  <meta property="og:title" content="MyWork‑AI — Pośrednictwo IT & Agencja Pracy" />
+  <meta property="og:description" content="Łączymy specjalistów IT z firmami. Rekrutacja, outsourcing, strony WWW, automatyzacje." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mywork-ai.com/" />
+  <meta property="og:image" content="https://dummyimage.com/1200x630/0f172a/ffffff&text=MyWork‑AI" />
+  <meta name="theme-color" content="#0b1020" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.08); }
+    .container-2xl { max-width: 1200px; }
+    .gradient-bg { background: radial-gradient(1200px 600px at 90% -10%, rgba(59,130,246,.25), transparent 60%),
+                                radial-gradient(1000px 500px at 0% 0%, rgba(236,72,153,.25), transparent 60%),
+                                linear-gradient(180deg,#070a16 0%, #0b1020 60%, #0b1020 100%); }
+  </style>
+  <style>
+  .lang-switch button.active {
+    color: #00eaff;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+</style>
+  <script>
+    // Tailwind config tweaks
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Ubuntu', 'Cantarell', 'Noto Sans', 'Helvetica Neue', 'Arial', '\"Apple Color Emoji\"', '\"Segoe UI Emoji\"' ] } } } }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MyWork‑AI",
+    "url": "https://mywork-ai.com/",
+    "email": "info@mywork-ai.com",
+    "sameAs": []
+  }
+  </script>
+
+<!-- Language switch -->
+<div class="lang-switch flex gap-2 items-center ml-4">
+  <button onclick="setLang('pl', this)" class="px-2 py-1 rounded text-sm hover:text-white/90">PL</button>
+  <button onclick="setLang('en', this)" class="px-2 py-1 rounded text-sm hover:text-white/90">EN</button>
+  <button onclick="setLang('de', this)" class="px-2 py-1 rounded text-sm hover:text-white/90">DE</button>
+</div>
+
+
+
+
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-indigo-500/40">
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 bg-slate-950/70 backdrop-blur border-b border-white/5">
+    <div class="mx-auto container-2xl px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-2 group">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" class="transition group-hover:scale-105">
+          <path d="M3 12a9 9 0 1 1 18 0 9 9 0 0 1-18 0Z" stroke="currentColor" class="text-indigo-400"/>
+          <path d="M7 13.5 11 8l2 2 4-1.5-4 7-2-2-4 .5z" fill="currentColor" class="text-pink-400"/>
+        </svg>
+        <span class="font-semibold tracking-tight">MyWork‑AI</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#uslugi" class="hover:text-white/90 text-white/70" data-i18n="services">Usługi</a>
+
+        <a href="#oferty" class="hover:text-white/90 text-white/70" data-i18n="services">Oferty pracy</a>
+        <a href="#dlafirm" class="hover:text-white/90 text-white/70" data-i18n="services">Dla firm</a>
+        <a href="#kontakt" class="hover:text-white/90 text-white/70" data-i18n="services">Kontakt</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#kontakt" class="hidden sm:inline-flex px-4 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-400 transition shadow-lg shadow-indigo-500/20">Porozmawiajmy</a>
+        <button id="menuBtn" class="md:hidden p-2 rounded-lg hover:bg-white/5" aria-label="Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/5">
+      <div class="px-4 py-3 flex flex-col gap-2 text-sm">
+        <a class="py-2" href="#uslugi">Usługi</a>
+        <a class="py-2" href="#oferty">Oferty pracy</a>
+        <a class="py-2" href="#dlafirm">Dla firm</a>
+        <a class="py-2" href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="gradient-bg" id="top">
+    <div class="mx-auto container-2xl px-4 py-20 md:py-28">
+      <div class="grid md:grid-cols-2 items-center gap-10">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight">
+            Twoja nowa praca albo <span class="text-indigo-400">idealny specjalista</span> — szybciej niż myślisz
+          </h1>
+          <p class="mt-5 text-white/70 max-w-xl">
+            Rekrutacja i outsourcing IT bez tarcia. Dostarczamy developerów, devopsów i analityków — oraz tworzymy
+            nowoczesne strony i automatyzacje dla firm.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#oferty" class="px-5 py-3 rounded-xl bg-white text-slate-900 hover:bg-white/90 transition">Przeglądaj oferty</a>
+            <a href="#kontakt" class="px-5 py-3 rounded-xl glass hover:bg-white/10 transition">Zgłoś zapotrzebowanie</a>
+          </div>
+          <div class="mt-6 text-xs text-white/60">SLA: pierwsze CV w 48h. Umowy B2B i UoP. EU/CH.</div>
+        </div>
+        <div class="relative">
+          <div class="absolute -inset-6 rounded-3xl blur-3xl bg-indigo-500/20"></div>
+          <div class="relative glass rounded-3xl p-6 md:p-8">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="p-4 rounded-2xl bg-white/5">
+                <div class="text-sm">Frontend</div>
+                <div class="text-2xl font-semibold">React / Vue</div>
+              </div>
+              <div class="p-4 rounded-2xl bg-white/5">
+                <div class="text-sm">Backend</div>
+                <div class="text-2xl font-semibold">Node / Go</div>
+              </div>
+              <div class="p-4 rounded-2xl bg-white/5">
+                <div class="text-sm">AI & Automatyzacje</div>
+                <div class="text-2xl font-semibold">Chatboty / RPA</div>
+              </div>
+              <div class="p-4 rounded-2xl bg-white/5">
+                <div class="text-sm">DevOps</div>
+                <div class="text-2xl font-semibold">Cloud / CI/CD</div>
+              </div>
+            </div>
+            <div class="mt-4 text-xs text-white/60">Pełna weryfikacja kandydatów + testy techniczne.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / BADGES -->
+  <section class="border-y border-white/5 bg-slate-950/60">
+    <div class="mx-auto container-2xl px-4 py-10">
+      <div class="flex flex-wrap items-center gap-x-10 gap-y-5 text-white/50 text-sm">
+        <span class="uppercase tracking-widest text-xs">Zaufanie & standardy:</span>
+        <span class="inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l4 4 12-12" stroke="currentColor"/></svg> RODO / GDPR</span>
+        <span class="inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l4 4 12-12" stroke="currentColor"/></svg> Umowy CH/EU</span>
+        <span class="inline-flex items-center gap-2"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12l4 4 12-12" stroke="currentColor"/></svg> Tylko zweryfikowani kandydaci</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- USŁUGI -->
+  <section id="uslugi" class="mx-auto container-2xl px-4 py-16">
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-semibold tracking-tight">Usługi</h2>
+      <p class="mt-3 text-white/70">Rekrutacja IT end‑to‑end + realizacja projektów web i automatyzacji.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 mt-10">
+      <!-- Card 1 -->
+      <div class="glass rounded-2xl p-6">
+        <div class="text-sm text-white/70">Pośrednictwo & outsourcing</div>
+        <h3 class="mt-1 text-xl font-semibold">Rekrutacja IT</h3>
+        <p class="mt-3 text-white/70">Sourcing, preselekcja, testy, krótkie listy i organizacja rozmów. Modele success fee lub abonament.</p>
+        <ul class="mt-4 space-y-2 text-sm text-white/70 list-disc list-inside">
+          <li>Full‑stack, Mobile, Data/AI, DevOps</li>
+          <li>On‑site / remote, EU & Szwajcaria</li>
+          <li>Weryfikacja techniczna + soft‑skills</li>
+        </ul>
+      </div>
+      <!-- Card 2 -->
+      <div class="glass rounded-2xl p-6">
+        <div class="text-sm text-white/70">Dla firm</div>
+        <h3 class="mt-1 text-xl font-semibold">Strony WWW & sklepy</h3>
+        <p class="mt-3 text-white/70">Nowoczesne landing pages i sklepy (Shopify). Szybkie wdrożenia, SEO i analityka.</p>
+        <ul class="mt-4 space-y-2 text-sm text-white/70 list-disc list-inside">
+          <li>Projekt → wdrożenie 7–14 dni</li>
+          <li>SEO techniczne + Core Web Vitals</li>
+          <li>Integracje płatności (Stripe/Revolut)</li>
+        </ul>
+      </div>
+      <!-- Card 3 -->
+      <div class="glass rounded-2xl p-6">
+        <div class="text-sm text-white/70">AI & RPA</div>
+        <h3 class="mt-1 text-xl font-semibold">Boty i automatyzacje</h3>
+        <p class="mt-3 text-white/70">Chatboty sprzedażowe, generatory treści, integracje z CRM/ERP. Automatyzacje procesów.</p>
+        <ul class="mt-4 space-y-2 text-sm text-white/70 list-disc list-inside">
+          <li>Integracje: Slack, WhatsApp, e‑mail</li>
+          <li>Panele i raporty w czasie rzeczywistym</li>
+          <li>Bezpieczeństwo i RODO w standardzie</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DLA FIRM (PROCES) -->
+  <section id="dlafirm" class="bg-white/5">
+    <div class="mx-auto container-2xl px-4 py-16">
+      <div class="grid md:grid-cols-5 gap-6 items-start">
+        <div class="md:col-span-2">
+          <h2 class="text-3xl font-semibold tracking-tight">Jak współpracujemy</h2>
+          <p class="mt-3 text-white/70">Prosty proces, transparentne warunki i szybkie efekty.</p>
+          <a href="#kontakt" class="mt-6 inline-flex px-5 py-3 rounded-xl bg-indigo-500 hover:bg-indigo-400 transition">Zgłoś zapotrzebowanie</a>
+        </div>
+        <div class="md:col-span-3 grid gap-4">
+          <div class="glass rounded-2xl p-5 flex items-start gap-4">
+            <div class="w-9 h-9 rounded-lg bg-indigo-500/20 flex items-center justify-center">1</div>
+            <div>
+              <div class="font-semibold">Brief & profil idealnego kandydata</div>
+              <div class="text-white/70 text-sm">Ustalamy must‑have, nice‑to‑have, budżet, tryb pracy i języki.</div>
+            </div>
+          </div>
+          <div class="glass rounded-2xl p-5 flex items-start gap-4">
+            <div class="w-9 h-9 rounded-lg bg-indigo-500/20 flex items-center justify-center">2</div>
+            <div>
+              <div class="font-semibold">Sourcing + pre‑screening</div>
+              <div class="text-white/70 text-sm">Aktywny headhunting, weryfikacja CV, zadania techniczne.</div>
+            </div>
+          </div>
+          <div class="glass rounded-2xl p-5 flex items-start gap-4">
+            <div class="w-9 h-9 rounded-lg bg-indigo-500/20 flex items-center justify-center">3</div>
+            <div>
+              <div class="font-semibold">Shortlist & rozmowy</div>
+              <div class="text-white/70 text-sm">Do 3 dopasowanych kandydatów + kalendarz rozmów.</div>
+            </div>
+          </div>
+          <div class="glass rounded-2xl p-5 flex items-start gap-4">
+            <div class="w-9 h-9 rounded-lg bg-indigo-500/20 flex items-center justify-center">4</div>
+            <div>
+              <div class="font-semibold">Start współpracy</div>
+              <div class="text-white/70 text-sm">Wsparcie przy umowie, onboardingu i rozliczeniach.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTY PRACY -->
+  <section id="oferty" class="mx-auto container-2xl px-4 py-16">
+    <div class="flex items-end justify-between gap-6 flex-wrap">
+      <div>
+        <h2 class="text-3xl font-semibold tracking-tight">Aktualne oferty pracy</h2>
+        <p class="mt-3 text-white/70">Wybrane przykłady. Napisz, jeśli szukasz czegoś innego — mamy oferty niepubliczne.</p>
+      </div>
+      <a href="#kontakt" class="px-4 py-2 rounded-xl glass hover:bg-white/10">Wyślij CV</a>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 mt-10" id="jobs">
+      <!-- Karty ofert generowane z JS poniżej -->
+    </div>
+  </section>
+
+  <!-- TESTYMONIALE -->
+  <section class="bg-white/5">
+    <div class="mx-auto container-2xl px-4 py-16">
+      <h2 class="text-3xl font-semibold tracking-tight">Co mówią klienci</h2>
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <figure class="glass rounded-2xl p-6">
+          <blockquote class="text-white/80">„Pierwsze 3 dopasowane CV w dwa dni. Zatrudniliśmy seniora Reacta w 3 tygodnie.”</blockquote>
+          <figcaption class="mt-4 text-sm text-white/60">CTO, e‑commerce</figcaption>
+        </figure>
+        <figure class="glass rounded-2xl p-6">
+          <blockquote class="text-white/80">„Świetna komunikacja i realne wsparcie. Proces rekrutacji był wreszcie prosty.”</blockquote>
+          <figcaption class="mt-4 text-sm text-white/60">Head of People, SaaS</figcaption>
+        </figure>
+        <figure class="glass rounded-2xl p-6">
+          <blockquote class="text-white/80">„Dzięki automatyzacjom oszczędzamy ~40h/mies. Polecamy!”</blockquote>
+          <figcaption class="mt-4 text-sm text-white/60">COO, logistyka</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="mx-auto container-2xl px-4 py-16">
+    <div class="grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl font-semibold tracking-tight">Skontaktuj się</h2>
+        <p class="mt-3 text-white/70">Napisz kilka zdań o potrzebie lub prześlij CV. Odpowiemy tego samego dnia roboczego.</p>
+        <div class="mt-6 glass rounded-2xl p-6">
+          <div class="text-sm text-white/70">E‑mail</div>
+          <a href="mailto:info@mywork-ai.com" class="text-lg hover:underline">info@mywork-ai.com</a>
+        </div>
+      </div>
+      <form id="contactForm" class="glass rounded-2xl p-6 grid gap-4" novalidate>
+        <div>
+          <label class="text-sm text-white/70" for="name">Imię i nazwisko</label>
+          <input id="name" name="name" required class="mt-1 w-full bg-white/5 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Jan Kowalski" />
+        </div>
+        <div>
+          <label class="text-sm text-white/70" for="email">E‑mail</label>
+          <input id="email" name="email" type="email" required class="mt-1 w-full bg-white/5 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500" placeholder="jan@firma.com" />
+        </div>
+        <div>
+          <label class="text-sm text-white/70" for="msg">Wiadomość</label>
+          <textarea id="msg" name="message" rows="4" required class="mt-1 w-full bg-white/5 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Czego potrzebujesz?"></textarea>
+        </div>
+        <button class="mt-2 px-5 py-3 rounded-xl bg-indigo-500 hover:bg-indigo-400 transition" type="submit">Wyślij</button>
+        <p id="formNote" class="text-sm text-white/60"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5">
+    <div class="mx-auto container-2xl px-4 py-10 text-sm text-white/60">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div>
+          <div class="font-semibold text-white">MyWork‑AI</div>
+          <div class="mt-1">© <span id="year"></span> MyWork‑AI. Wszelkie prawa zastrzeżone.</div>
+        </div>
+        <div class="flex gap-6">
+          <a href="#" class="hover:underline">Polityka prywatności</a>
+          <a href="#" class="hover:underline">Regulamin</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Dummy jobs — podmień przez API / Supabase / Firestore
+    const jobs = [
+      { title: 'Senior React Developer', tags: ['React', 'TypeScript', 'Next.js'], loc: 'Remote / PL/CH', pay: '20–30k PLN B2B', type: 'B2B' },
+      { title: 'DevOps Engineer', tags: ['AWS', 'K8s', 'Terraform'], loc: 'Zürich / Hybrid', pay: '130–160k CHF', type: 'Full‑time' },
+      { title: 'Python Data Engineer', tags: ['Python', 'Airflow', 'GCP'], loc: 'Remote / EU', pay: '18–28k PLN B2B', type: 'B2B' },
+    ];
+    const jobsWrap = document.getElementById('jobs');
+    jobs.forEach(j => {
+      const el = document.createElement('article');
+      el.className = 'glass rounded-2xl p-6 flex flex-col';
+      el.innerHTML = `
+        <div class='text-white/70 text-sm'>${j.type}</div>
+        <h3 class='text-xl font-semibold mt-1'>${j.title}</h3>
+        <div class='mt-2 text-white/70 text-sm'>${j.loc}</div>
+        <div class='mt-4 flex flex-wrap gap-2'>
+          ${j.tags.map(t => `<span class=\"px-2 py-1 rounded-lg bg-white/5 text-xs\">${t}</span>`).join('')}
+        </div>
+        <div class='mt-4 font-medium'>${j.pay}</div>
+        <a href='#kontakt' class='mt-6 inline-flex items-center justify-center px-4 py-2 rounded-xl bg-white text-slate-900 hover:bg-white/90'>Aplikuj</a>
+      `;
+      jobsWrap.appendChild(el);
+    });
+
+    // Contact form — prosty fallback mailto + komunikat. Podmień na prawdziwe API.
+    const form = document.getElementById('contactForm');
+    const note = document.getElementById('formNote');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fd = new FormData(form);
+      const body = `Imię: ${fd.get('name')}\nE‑mail: ${fd.get('email')}\n\n${fd.get('message')}`;
+      window.location.href = `mailto:info@mywork-ai.com?subject=Kontakt z mywork-ai.com&body=${encodeURIComponent(body)}`;
+      note.textContent = 'Otworzyliśmy klienta poczty. Jeśli nie działa, napisz ręcznie na info@mywork-ai.com.';
+    });
+  </script>
+  <script src="lang.js"></script>
+<script>
+  const savedLang = localStorage.getItem('lang') || 'pl';
+  setLang(savedLang, document.querySelector(`.lang-switch button[onclick*="${savedLang}"]`));
+</script>
+
+</body>
+</html>
+
+
