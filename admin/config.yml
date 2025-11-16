@@ -3,6 +3,8 @@ backend:
   branch: main
 
 site_url: https://neon-yeot-2c5d65.netlify.app
+base_url: /admin
+
 
 media_folder: "static/img"
 public_folder: "/img"
